@@ -1,0 +1,21 @@
+{
+  "name": "webcomponents-react-angular-vue",
+  "version": "0.0.1",
+  "author": {
+    "name": "Nick Mitchell",
+    "email": "nick@kitset.io"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "3.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "scripts": {
+    "commit": "git-cz"
+  }
+}

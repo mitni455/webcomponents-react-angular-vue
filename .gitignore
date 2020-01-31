@@ -1,0 +1,17 @@
+# components
+node_modules
+build 
+react-component/build
+react-component/node_modules
+angular-component/build
+angular-component/node_modules
+vue-component/build
+vue-component/node_modules
+
+# editors
+*.swp
+.idea/
+.vs/
+.vscode/
+.DS_Store
+
