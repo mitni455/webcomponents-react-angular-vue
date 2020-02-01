@@ -21,5 +21,7 @@
     "build": "cd react-component && yarn build",
     "serve": "yarn run build && serve -l 5000"
   },
-  "dependencies": {}
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
 }

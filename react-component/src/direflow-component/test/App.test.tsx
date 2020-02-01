@@ -1,11 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
-import App from '../App';
+import App, {IAppProps} from '../App';
 
-const reactProps = {
-  componentTitle: 'Component Test',
-  todoList: ['Mock', 'Test', 'Data'],
+const reactProps:IAppProps = {
+  btnTitle: 'Component Test',
+  todoList: [
+    {
+      id: '1',
+      name: 'Test todo',
+      isCompleted: false,
+      isEditing: false
+    }
+  ],
+  getUserEventName: 'Login'
 };
 
 it('renders without crashing', () => {

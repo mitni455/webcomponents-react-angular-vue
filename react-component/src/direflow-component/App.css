@@ -1,13 +1,24 @@
-.app{
+.app {
   width: 100vw;
   min-height: 100vh;
   padding: 30px 60px;
   justify-content: space-around;
   box-sizing: border-box;
-  background-color: rgba(255,255,255,.8);
+  background-color: rgba(255, 255, 255, .8);
   box-shadow: 0 4px 14px 4px #375c821c;
   font-family: 'Noto Sans JP', sans-serif;
 }
-.todoapp h1{
-  display: none;
+
+button.btn-get-user{
+  border: 1px solid rgba(0, 0, 0, .2);
+  padding: 20px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+  margin: auto;
+  display: block;
+  cursor: pointer;
+}
+
+button.btn-get-user:active {
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, .2) !important;
 }

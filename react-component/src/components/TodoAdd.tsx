@@ -41,6 +41,11 @@ const TodoAdd: FC<IProps> = (props) => {
             }
 
             props.createTodo(todoModel);
+
+            /**
+             * @todo use state not html 
+             */
+            evt.currentTarget.value = '';
         }
     }
     
