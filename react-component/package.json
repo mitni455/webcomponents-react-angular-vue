@@ -15,7 +15,8 @@
     "direflow-component": "3.2.3",
     "react": "16.10.1",
     "react-dom": "16.10.1",
-    "react-scripts": "3.1.2"
+    "react-scripts": "3.1.2",
+    "todomvc-app-css": "^2.3.0"
   },
   "devDependencies": {
     "@types/jest": "24.0.18",
@@ -23,10 +24,10 @@
     "jest-environment-jsdom-fourteen": "0.1.0",
     "react-app-rewired": "2.1.3",
     "react-test-renderer": "16.9.0",
+    "tslint": "5.20.0",
     "tslint-config-airbnb": "5.11.2",
     "tslint-config-silind": "1.0.22",
     "tslint-react": "4.1.0",
-    "tslint": "5.20.0",
     "typescript": "^3.7.0"
   },
   "eslintConfig": {

@@ -5,7 +5,7 @@ import App from '../App';
 
 const reactProps = {
   componentTitle: 'Component Test',
-  sampleList: ['Mock', 'Test', 'Data'],
+  todoList: ['Mock', 'Test', 'Data'],
 };
 
 it('renders without crashing', () => {

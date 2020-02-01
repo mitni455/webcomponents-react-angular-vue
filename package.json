@@ -20,5 +20,6 @@
     "commit": "git-cz",
     "build": "cd react-component && yarn build",
     "serve": "yarn run build && serve -l 5000"
-  }
+  },
+  "dependencies": {}
 }

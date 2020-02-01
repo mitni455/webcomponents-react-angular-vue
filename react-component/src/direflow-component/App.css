@@ -1,13 +1,38 @@
-.app {
-  width: 400px;
-  height: 575px;
+.app{
+  width: 100vw;
+  min-height: 100vh;
   padding: 30px 60px;
   justify-content: space-around;
   box-sizing: border-box;
-  background-color: white;
+  background-color: rgba(255,255,255,.8);
+  box-shadow: 0 4px 14px 4px #375c821c;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.todoapp h1{
+  display: none;
+}
+/*
+
+.app {
+  width: 400px;
+  height: 575px;
+
+  width: 100vw;
+  height: 100vh;
+  
+  padding: 30px 60px;
+  justify-content: space-around;
+  box-sizing: border-box;
+  background-color: rgba(255,255,255,.8);
   box-shadow: 0 4px 14px 4px #375c821c;
   font-family: 'Noto Sans JP', sans-serif;
   border-bottom: 5px solid #cad5e6;
+}
+
+.bordered{
+  border-radius: 4px;
+  border: 2px solid white;
+  box-shadow: 1px 1px 3px rgba(0,0,0,.2);
 }
 
 .top {
@@ -32,8 +57,13 @@
 .header-image {
   width: 165px;
   height: 165px;
-  background: url('https://silind-s3.s3.eu-west-2.amazonaws.com/direflow/logo.svg');
   background-size: contain;
+}
+.header-image > img{
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  
 }
 
 .header-title {
@@ -48,6 +78,21 @@
   color: #666;
   text-align: center;
 }
+.todo-row{
+  display: flex;
+  justify-content: space-around;
+}
+  .todo-row > input{
+    display: block;    
+    width: 40px;
+    flex-basis: 40px;
+    flex-grow: 1;
+  }
+  .todo-row > label{
+    display: block;    
+    flex-grow: 3;
+    flex-basis: 80%;
+  }
 
 .button {
   width: 150px;
@@ -68,3 +113,5 @@
   box-shadow: 4px 4px 8px #16314d63;
   background-color: #40558f;
 }
+
+*/
