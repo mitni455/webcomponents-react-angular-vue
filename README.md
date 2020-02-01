@@ -1,3 +1,6 @@
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![npm version](http://img.shields.io/npm/v/webcomponents-react-angular-vue.svg?style=flat)](https://www.npmjs.com/package/webcomponents-react-angular-vue "View this project on npm")
+
 # WebComponents with ReactJs, Angular and VueJs
 
 This is the repo for the Medium Series starting here: 
