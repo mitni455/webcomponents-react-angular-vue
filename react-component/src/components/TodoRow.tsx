@@ -84,10 +84,10 @@ const TodoRow: FC<ITodoRowProps> = (props: ITodoRowProps) => {
          * @hack 
          * @tutorial hack to get focus working 
          */
-        globalThis.txtEdit  = txtEdit.current;
+        const tempTxtEdit:HTMLInputElement|null = txtEdit.current;
         if(updatedTodo.isEditing && txtEdit.current) {
             setTimeout(()=>{
-                globalThis.txtEdit.select();
+                if(tempTxtEdit) tempTxtEdit.select();
             }, 100)
         }
 

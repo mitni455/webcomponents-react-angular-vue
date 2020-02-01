@@ -5,32 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Webcomponents with React, Angular and VueJs</title>
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
+    <header>
+        <img id="user-img" src="http://tripuranrhm.gov.in/images/no-image.jpg" alt="profile">
+        <h3 id="user-name">
+            No User 
+        </h3>
+    </header>
+
     <script src="react-component/build/direflowBundle.js"></script>
-    <react-component></react-component>
-    <script>
-        const reactComponent = document.querySelector('react-component');
-        reactComponent.todoList = [
-            {
-                id: '1',
-                name: 'Completed task',
-                isCompleted: true,
-                isEditing: false,
-            },
-            {
-                id: '2',
-                name: 'Incomplete task',
-                isCompleted: false,
-                isEditing: false,
-            },
-            {
-                id: '3',
-                name: 'Editable task',
-                isCompleted: false,
-                isEditing: false,
-            },
-        ];
-    </script>
+    <react-component btnTitle="Login"></react-component>
+    
+    <script src="assets/js/app.js"></script>
+    
 </body>
 </html>

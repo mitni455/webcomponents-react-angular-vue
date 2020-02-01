@@ -10,15 +10,17 @@ import { Todo } from '../../common/models/Todo';
  * @interface IDireflowProps
  */
 interface IDireflowProps{
-    componentTitle: string;
-    todoList: Todo[]
+    btnTitle: string;
+    todoList: Todo[],
+    getUserEventName: string 
 }
 /**
  * @name Properties 
  */
 const direflowProperties:IDireflowProps = {
-    componentTitle: 'React Web Component',
-    todoList: []
+    btnTitle: 'Get Current User',
+    todoList: [],
+    getUserEventName: 'GET_CURRENT_USER'
 };
 
 /**
