@@ -15,7 +15,7 @@ import TodoFooter from './TodoFooter';
  * @interface IProps 
  */
 interface IProps {
-
+    todoList:Todo[]
 }
 
 
@@ -26,26 +26,7 @@ interface IProps {
  */
 const TodoList: FC<IProps> = (props) => {
 
-    const [todoList, setTodoList] = useState<Todo[]>([
-        {
-            id: '1',
-            name: 'Completed task',
-            isCompleted: true,
-            isEditing: false,
-        },
-        {
-            id: '2',
-            name: 'Incomplete task',
-            isCompleted: false,
-            isEditing: false,
-        },
-        {
-            id: '3',
-            name: 'Editable task',
-            isCompleted: false,
-            isEditing: false,
-        },
-    ]);
+    const [todoList, setTodoList] = useState(props.todoList);
     
     /**
      * @name createTodo 

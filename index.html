@@ -9,5 +9,28 @@
 <body>
     <script src="react-component/build/direflowBundle.js"></script>
     <react-component></react-component>
+    <script>
+        const reactComponent = document.querySelector('react-component');
+        reactComponent.todoList = [
+            {
+                id: '1',
+                name: 'Completed task',
+                isCompleted: true,
+                isEditing: false,
+            },
+            {
+                id: '2',
+                name: 'Incomplete task',
+                isCompleted: false,
+                isEditing: false,
+            },
+            {
+                id: '3',
+                name: 'Editable task',
+                isCompleted: false,
+                isEditing: false,
+            },
+        ];
+    </script>
 </body>
 </html>
