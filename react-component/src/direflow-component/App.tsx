@@ -1,42 +1,58 @@
-import React, { FC, useContext } from 'react';
+import React, { FC, useContext, useState } from 'react';
 import { EventContext, Styled } from 'direflow-component';
 import styles from './App.css';
 
+/**
+ * @requires TodoMVC 
+ */
+import todoStyles from 'todomvc-app-css/index.css';
+
+/**
+ * @requires Models  
+ */
+import { Todo } from '../../../common/models/Todo';
+
+/**
+ * @requires Components 
+ */
+import TodoList from '../components/TodoList';
+
 interface IProps {
-  sampleList: string[];
-  componentTitle: string;
+    imgSrc?: string;
+    todoList: Todo[];
+    componentTitle: string;
 }
 
+
+/**
+ * @name App 
+ * @description This is the web component built by Direflow 
+ * @param {IProps} props - properties from the web component
+ */
 const App: FC<IProps> = (props) => {
-  const dispatch = useContext(EventContext);
 
-  const handleClick = () => {
-    const event = new Event('my-event');
-    dispatch(event);
-  };
+    /**
+     * @description create a dispatch event to fire from 
+     * @usage add an event listener to the webcomponent for the event name e.g. reactWebComponent.addEventListener('my-event', handler);
+     */
+    const dispatchEventOnWebComponent = useContext(EventContext);
 
-  const renderSampleList = props.sampleList.map((sample: string) => (
-    <div key={sample} className='sample-text'>
-      → {sample}
-    </div>
-  ));
 
-  return (
-    <Styled styles={styles}>
-      <div className='app'>
-        <div className='top'>
-          <div className='header-image' />
-        </div>
-        <div className='bottom'>
-          <div className='header-title'>{props.componentTitle}</div>
-          <div>{renderSampleList}</div>
-          <button className='button' onClick={handleClick}>
-            Let&apos;s go!
-          </button>
-        </div>
-      </div>
-    </Styled>
-  );
+    const handleClick = () => {
+        const event = new Event('my-event');
+        dispatchEventOnWebComponent(event);
+    };
+
+    return (
+        <Styled styles={[todoStyles, styles]}>
+
+            <div className='app bordered'>
+
+                <TodoList />
+
+            </div>
+        </Styled>
+    );
 };
 
 export default App;
