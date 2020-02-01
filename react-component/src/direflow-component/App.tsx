@@ -18,9 +18,8 @@ import { Todo } from '../../../common/models/Todo';
 import TodoList from '../components/TodoList';
 
 interface IProps {
-    imgSrc?: string;
-    todoList: Todo[];
     componentTitle: string;
+    todoList: Todo[];
 }
 
 
@@ -47,8 +46,8 @@ const App: FC<IProps> = (props) => {
         <Styled styles={[todoStyles, styles]}>
 
             <div className='app bordered'>
-
-                <TodoList />
+                
+                <TodoList todoList={props.todoList} />
 
             </div>
         </Styled>
